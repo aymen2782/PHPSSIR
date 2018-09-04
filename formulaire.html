@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Ajouter ToDo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
+<form action="ajouterTodo.php" method="post">
+    <label for="nom">Nom</label><input name="nom" class="form-control" id="nom" type="text">
+    <label for="todo">Todo</label><input name="todo" class="form-control" id="todo" type="text">
+    <input type="submit" value="envoyer" class="btn btn-primary">
+</form>
 
 </body>
 </html>
