@@ -22,13 +22,6 @@ session_start();
 </head>
 <body>
 
-<!--/*-->
-<!--Si je n'ai pas une session-->
-<!--    Afficher Liste vide-->
-<!--Sinon-->
-<!--    Je boucle sur la liste de Todos-->
-<!--*/-->
-
 <?php
 if (!isset($_SESSION['mesTodos'])){
 ?>
@@ -55,7 +48,7 @@ if (!isset($_SESSION['mesTodos'])){
 <ol class="list-group">
     <?php foreach ($_SESSION['mesTodos'] as $titre=>$contenu)  { ?>
        <li class="list-group-item">
-           <?php echo $titre. ': '. $contenu ; ?>
+           <?php echo $titre. ' : '. $contenu ; ?>
        </li>
     <?php } ?>
         </ol>
